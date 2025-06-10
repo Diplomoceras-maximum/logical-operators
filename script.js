@@ -107,3 +107,34 @@ console.log(!0); // true
 
 console.log(!!"Hello World!"); // true
 console.log(!!null); // false
+
+// ?? Nullish Coalescing
+
+// Returns expression1 if it is neither null or undefined, otherwise returns expression2
+
+/* Syntax of Logical Nullish Coalescing
+
+    expression1 ?? expression2
+
+*/
+
+console.log(null ?? 1); // 1
+console.log(undefined ?? 1); // 1
+
+let user;
+console.log(user ?? "Unknowm"); // Unknown (user is not defined)
+
+user = "Max";
+console.log(user ?? "Unknown"); // Max (user is not null and is defined)
+
+// Nullish coalescing is often used to find the first value from a list that isnt null/undefined
+
+firstName = "";
+lastName = "";
+nickName = "Diplomoceras-maximum";
+
+console.log(firstName || lastName || nickName || "Error"); // Diplomoceras-maximum (first "defined" value)
+
+// ?? is similar to || however:
+// || returns the first "true" value
+// ?? returns the first defined value
