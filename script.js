@@ -8,6 +8,11 @@
 
 // Logical operators can be applied to any data type
 
+// Precedence of logical operators:
+// ! NOT
+// && AND
+// || OR
+
 // || OR
 
 // Returns expression1 if it can be converted to "true", otherwise returns expression2
