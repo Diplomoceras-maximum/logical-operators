@@ -47,3 +47,36 @@ let lastName = "";
 let nickName = "";
 
 console.log(firstName || lastName || nickName || "Error"); // Error (there are no true values, so the last operand is returned)
+
+// && AND
+
+// Returns expression1 if it can be converted to "false", otherwise returns expression2.
+
+/* Syntax of Logical AND
+
+    expression1 && expression2
+
+*/
+
+// AND returns "true" is both operands are "true", otherwise it returns "false"
+
+console.log(true && true); // true
+console.log(true && false); // false
+console.log(false && true); // false
+console.log(false && false); // false
+
+// If an operand is not a boolean, it is converted to a boolean
+// Example: 1 = "true", and 0 = "false"
+
+let day = 30;
+let month = 6;
+
+if (day == 30 && month == 6) {
+  console.log("It is your birthday!"); // It is your birthday! (both conditions are true so the string is logged)
+}
+
+// If more than 2 operands, it evalautes from left to right
+// Each operand is converted in order to boolean, if the result is "false" it stops and returns the original value of that operand
+// If all operands are evalauted (all "true"), the last operand is returned
+
+console.log(1 && 2 && 3); // 3 (none of the values are "false" so the last value is returned)
