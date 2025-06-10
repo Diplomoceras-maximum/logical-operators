@@ -80,3 +80,25 @@ if (day == 30 && month == 6) {
 // If all operands are evalauted (all "true"), the last operand is returned
 
 console.log(1 && 2 && 3); // 3 (none of the values are "false" so the last value is returned)
+
+// ! NOT
+
+// Returns "false" if its single operand can be converted to "true", otherwise returns "true"
+
+/* Syntax of Logical NOT
+
+    !expression
+
+*/
+
+// NOT converts the operand to "true" or "false", then returns the inverse value
+
+console.log(!true); // false
+console.log(!false); // true
+console.log(!1); // false
+console.log(!0); // true
+
+// Double NOT (!!) converts a value to a boolean data type
+
+console.log(!!"Hello World!"); // true
+console.log(!!null); // false
