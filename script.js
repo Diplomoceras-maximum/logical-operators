@@ -38,9 +38,9 @@ if (hour < 10 || hour > 18) {
   console.log("The shop is closed."); // loggs nothing as the hour 12 doesnt match either of the two conditions
 }
 
-// If more than 3 operands, it evalautes from left to right
-// Each operand is converted in order to boolean, if the result is true it stops and returns the original value of that operand
-// If all operands are evalauted (all false), the last operand is returned
+// If more than 2 operands, it evalautes from left to right
+// Each operand is converted in order to boolean, if the result is "true" it stops and returns the original value of that operand
+// If all operands are evalauted (all "false"), the last operand is returned
 
 let firstName = "";
 let lastName = "";
